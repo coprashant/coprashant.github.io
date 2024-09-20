@@ -6,61 +6,80 @@
     <title>Prasant Bhattarai</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="description" content="Prasant Bhattarai's personal website showcasing projects, skills, and contact information.">
     <meta name="keywords" content="Prasant Bhattarai, portfolio, projects, contact, web development">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#about" onclick="showSection('about')">About</a></li>
-            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
-            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Welcome to my personal website. I'm Prasant Bhattarai, a passionate programmer learning to be what I was made for. I love working in the computer and researching different things.This is one of the things i am learning (to develop fun and interacting websites).</p>
-    </section>
-    <section id="projects" style="display: none;">
-        <h1>Projects</h1>
-        <div class="project">
-            <h2>c0lleCt</h2>
-            <p>c0lleCt is a simple SFML-based game where players control a basket to catch falling eggs. The game features increasing difficulty levels, sound effects, and a restart/exit option when the game is over.
-            </p>
-              <h3>  Features</h3>
-                <p>Gameplay:</p>
-                <p>Move the basket left and right to catch falling eggs.</p>
-                <p>Difficulty:</p>
-                <p>The game speed and the number of falling eggs increases as you score more points.</p>
-                <p>Sound:</p>
-                <p>Includes background music and sound effects for catching and missing eggs.</p>
-                <h3>Requirements</h3>
-                <p>SFML: The game is built using the Simple and Fast Multimedia Library (SFML). You need to have SFML installed on your system.
-                <p>C++ Compiler: A compatible C++ compiler (e.g., MinGW, GCC, Clang).</p>
-                <p>Built With:
-                C++</p>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-        <!-- Add more projects as needed -->
-    </section>
-    <section id="contact" style="display: none;">
-        <h1>Contact</h1>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <input type="submit" value="Submit">
-        </form>
-        <p id="formMessage" style="display: none;">Thank you for contacting me! I'll get back to you soon.</p>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2024 Prasant Bhattarai. All rights reserved.</p>
-</footer>
-<script src="script.js"></script>
+        <section id="hero">
+            <div class="hero-content">
+                <img src="me.jpeg" alt="Profile Picture">
+                <div class="hero-text">
+                    <h1>Prasant Bhattarai</h1>
+                    <p>Cybersecurity Analyst | Future Cyber Defender</p>
+                    <p>Currently contributing to the development of fun and interactive websites.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="display: none;">
+            <h1>About Me</h1>
+            <p>Welcome to my personal website. I'm Prasant Bhattarai, a passionate programmer learning to be what I was made for. I love working in the computer and researching different things. This is one of the things I am learning (to develop fun and interactive websites).</p>
+        </section>
+        <section id="projects" style="display: none;">
+            <h1>Projects</h1>
+            <div class="project">
+                <h2>c0lleCt</h2>
+                <p>c0lleCt is a simple SFML-based game where players control a basket to catch falling eggs. The game features increasing difficulty levels, sound effects, and a restart/exit option when the game is over.</p>
+                <h3>Features</h3>
+                <p>Gameplay: Move the basket left and right to catch falling eggs.</p>
+                <p>Difficulty: The game speed and the number of falling eggs increases as you score more points.</p>
+                <p>Sound: Includes background music and sound effects for catching and missing eggs.</p>
+                <h3>Requirements</h3>
+                <p>SFML: The game is built using the Simple and Fast Multimedia Library (SFML). You need to have SFML installed on your system.</p>
+                <p>C++ Compiler: A compatible C++ compiler (e.g., MinGW, GCC, Clang).</p>
+                <p>Built With: C++</p>
+            </div>
+        </section>
+        <section id="contact" style="display: none;">
+            <h1>Contact</h1>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="submit" value="Submit">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Reason for contact" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <p id="formMessage" style="display: none;">Thank you for contacting me! I'll get back to you soon.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Prasant Bhattarai</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/prashant-bhattarai-624a1a328/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/coprashant" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Email: bhattaraiprashant010@gmail.com</p>
+        <p>Phone: +977 9768405675</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
