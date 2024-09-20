@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasant Bhattarai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Prasant Bhattarai's personal website showcasing projects, skills, and contact information.">
+    <meta name="keywords" content="Prasant Bhattarai, portfolio, projects, contact, web development">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Welcome to my personal website. I'm Prasant Bhattarai, a passionate programmer learning to be what I was made for. I love working in the computer and researching different things.This is one of the things i am learning (to develop fun and interacting websites).</p>
+    </section>
+    <section id="projects" style="display: none;">
+        <h1>Projects</h1>
+        <div class="project">
+            <h2>c0lleCt</h2>
+            <p>c0lleCt is a simple SFML-based game where players control a basket to catch falling eggs. The game features increasing difficulty levels, sound effects, and a restart/exit option when the game is over.
+            </p>
+              <h3>  Features</h3>
+                <p>Gameplay:</p>
+                <p>Move the basket left and right to catch falling eggs.</p>
+                <p>Difficulty:</p>
+                <p>The game speed and the number of falling eggs increases as you score more points.</p>
+                <p>Sound:</p>
+                <p>Includes background music and sound effects for catching and missing eggs.</p>
+                <h3>Requirements</h3>
+                <p>SFML: The game is built using the Simple and Fast Multimedia Library (SFML). You need to have SFML installed on your system.
+                <p>C++ Compiler: A compatible C++ compiler (e.g., MinGW, GCC, Clang).</p>
+                <p>Built With:
+                C++</p>
+
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="contact" style="display: none;">
+        <h1>Contact</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="formMessage" style="display: none;">Thank you for contacting me! I'll get back to you soon.</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Prasant Bhattarai. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
