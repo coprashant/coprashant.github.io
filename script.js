@@ -1,18 +1,13 @@
+document.getElementById('contactForm').onsubmit = function(event) {
+    event.preventDefault();
+    document.getElementById('formMessage').style.display = 'block';
+    this.reset();
+};
+
 function showSection(sectionId) {
-    // Hide all sections
-    document.querySelectorAll('section').forEach(section => {
+    const sections = document.querySelectorAll('main > section');
+    sections.forEach(section => {
         section.style.display = 'none';
     });
-    // Show the selected section with smooth scroll
-    const selectedSection = document.getElementById(sectionId);
-    selectedSection.style.display = 'block';
-    selectedSection.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId).style.display = 'block';
 }
-
-// Form submission handler with success message display
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    // Simulate form submission (replace with actual submission code)
-    document.getElementById('formMessage').style.display = 'block';
-    document.getElementById('contactForm').reset();
-});
